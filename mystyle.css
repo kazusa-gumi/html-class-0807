@@ -1,27 +1,32 @@
-:root{
+:root {
     --mwidth: 1100px;
     --primary: #333333;
 }
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.2;
     background-color: var(--primary);
 }
 
-.container{
+/* Utility styles */
+.container {
     max-width: var(--mwidth);
 }
 
+.clr{
+    clear: both;
+}
+
 /* NavVar styles */
-nav{
+nav {
     background-color: var(--primary);
 }
 
@@ -30,11 +35,11 @@ nav div {
 }
 
 nav div a {
-color: beige;
-text-decoration: none !important;
+    color: beige;
+    text-decoration: none !important;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -43,7 +48,7 @@ nav ul{
     align-items: middle;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     vertical-align: middle;
 }
@@ -61,37 +66,111 @@ nav ul li span {
     display: inline-block;
 }
 
-nav ul li div.dropdown span:hover{
-    color:beige;
+nav ul li div.dropdown span:hover {
+    color: beige;
 }
 
-li span:hover{
+li span:hover {
     border-color: blue;
 }
 
-li a:hover{
+li a:hover {
     background-color: blue;
 }
 
-.active{
+.active {
     background-color: green;
 }
 
-.dropdown{
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    padding:16px;
+    padding: 16px;
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content{
-display: block;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
+/* Gallery Styles */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #cccccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid goldenrod;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: beige;
+}
+
+h2 {
+    color: beige;
+    margin: 10px;
+}
+
+/* form styles */
+form {
+    width: 80%;
+    margin: 10px auto;
+    border: 3px double blue;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+input[type="password"] {
+    background-color: lightgoldenrodyellow;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: 2px solid goldenrod;
+    background-color: gold;
+    border-radius: 5px;
+}
+
+.select {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.form-box{
+    max-width: 100%;
+}

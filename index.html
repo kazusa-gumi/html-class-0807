@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 4 Revision</title>
-    <link rel="stylesheet" href="./mystyle.css">
+    <link rel="stylesheet" href="./myStyle.css">
 </head>
+
 <body>
+    <!-- Navbar start -->
     <nav>
         <ul>
             <li><a class="logo" href="#">
-                <img src="https://dummyimage.com/50x50/000/fff.png&text=logo" alt="">
-            </a></li>
+                    <img src="https://dummyimage.com/50x50/000/fff.png&text=logo" alt="">
+                </a></li>
             <li><a class="nav-link active" href="#">Home</a></li>
             <li><a class="nav-link" href="#">News</a></li>
             <li><a class="nav-link" href="#">Contact</a></li>
@@ -26,6 +29,66 @@
             </li>
         </ul>
     </nav>
-    
+    <!-- End of Navbar -->
+
+    <!-- Gallery start -->
+    <section title="Picture Gallery">
+        <h2>Image gallery</h2>
+        <div class="gallery">
+            <a href="#" target="_blank">
+                <img src="https://dummyimage.com/300x400/000/fff.png&text=My+image" alt="My Image">
+            </a>
+            <div class="desc">Add your image description here</div>
+        </div>
+        <div class="gallery">
+            <a href="#" target="_blank">
+                <img src="https://dummyimage.com/300x400/000/fff.png&text=My+image" alt="My Image">
+            </a>
+            <div class="desc">Add your image description here</div>
+        </div>
+        <div class="gallery">
+            <a href="#" target="_blank">
+                <img src="https://dummyimage.com/300x400/000/fff.png&text=My+image" alt="My Image">
+            </a>
+            <div class="desc">Add your image description here</div>
+        </div>
+    </section>
+    <!-- Gallery end -->
+    <!-- Float clear -->
+    <div class="clr"></div>
+    <!-- Html way -->
+    <hr>
+    <!-- Html way -->
+    <hr>
+    <!-- Form start -->
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <div class="form-content">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" />
+            </div>
+            <div class="form-content">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" />
+            </div>
+            <div class="form-content">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" />
+            </div>
+            <label for="select">Choose an option:</label>
+            <select for="select" id="select" class="select">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+            <div class="form-box">
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+    <!-- End of Form -->
 </body>
+
 </html>
